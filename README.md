@@ -1,6 +1,6 @@
 # llmdiff.nvim
 
-`llmdiff.nvim` is a Neovim plugin that integrates with the `mini.diff` plugin to manage and display differences between the original buffer content and modifications made by a LLM using `codecompanion.nvim` plugin. It automatically switches between showing diffs based on the LLM output or Git changes, and provides features to revert or update these changes.
+`llmdiff.nvim` is a Neovim plugin that integrates with the [mini.diff](https://github.com/echasnovski/mini.diff) plugin to manage and display differences between the original buffer content and modifications made by a LLM using [codecompanion.nvim](https://github.com/olimorris/codecompanion.nvim) plugin. It automatically switches between showing diffs based on the LLM output or Git changes, and provides features to revert or update these changes.
 
 ## Features
 
