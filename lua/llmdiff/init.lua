@@ -90,9 +90,14 @@ M.setup = function(config)
 				switch_to_codecompanion(buf_id)
 			elseif args.match == "CodeCompanionInlineFinished" then
 				local current_content = safe_get_lines(buf_id)
-				pcall(MiniDiff.set_ref_text, buf_id, original_buffer_content[buf_id] or {})
+				pcall(
+					MiniDiff.set_ref_text,
+					buf_id,
+					original_buffer_content[buf_id] or {}
+				)
 				original_buffer_content[buf_id] = current_content
 				schedule_revert_to_git(buf_id, revert_delay)
+				MiniDiff.toggle_overlay()
 			end
 		end,
 	})
